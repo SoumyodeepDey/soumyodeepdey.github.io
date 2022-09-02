@@ -1,4 +1,5 @@
 Backup/
+.vs/
 css/_config.scss
 css/_responsive.scss
 css/style.scss
