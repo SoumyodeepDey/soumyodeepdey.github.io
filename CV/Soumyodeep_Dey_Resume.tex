@@ -1,0 +1,278 @@
+%% start of file `template.tex'.
+%% Copyright 2006-2013 Xavier Danaux (xdanaux@gmail.com).
+%
+% This work may be distributed and/or modified under the
+% conditions of the LaTeX Project Public License version 1.3c,
+% available at http://www.latex-project.org/lppl/.
+
+
+\documentclass[11pt,a4paper,sans]{moderncv}        % possible options include font size ('10pt', '11pt' and '12pt'), paper size ('a4paper', 'letterpaper', 'a5paper', 'legalpaper', 'executivepaper' and 'landscape') and font family ('sans' and 'roman')
+
+% modern themes
+\moderncvstyle{classic}                            % style options are 'casual' (default), 'classic', 'oldstyle' and 'banking'
+\moderncvcolor{green}                                % color options 'blue' (default), 'orange', 'green', 'red', 'purple', 'grey' and 'black'
+%\renewcommand{\familydefault}{\sfdefault}         % to set the default font; use '\sfdefault' for the default sans serif font, '\rmdefault' for the default roman one, or any tex font name
+%\nopagenumbers{}                                  % uncomment to suppress automatic page numbering for CVs longer than one page
+
+% character encoding
+\usepackage[utf8]{inputenc}                       % if you are not using xelatex ou lualatex, replace by the encoding you are using
+%\usepackage{CJKutf8}                              % if you need to use CJK to typeset your resume in Chinese, Japanese or Korean
+\usepackage[T1]{fontenc}
+\usepackage{lmodern}
+\usepackage{tcolorbox}
+\usepackage{color}
+%\usepackage{hyperref}[colorlinks=true, citecolor=red, urlcolor=blue]
+% adjust the page margins
+\usepackage[scale=0.75]{geometry}
+%\setlength{\hintscolumnwidth}{3cm}                % if you want to change the width of the column with the dates
+%\setlength{\makecvtitlenamewidth}{10cm}           % for the 'classic' style, if you want to force the width allocated to your name and avoid line breaks. be careful though, the length is normally calculated to avoid any overlap with your personal info; use this at your own typographical risks...
+
+\usepackage{import}
+\definecolor{titleBack}{RGB}{52, 143, 235}
+
+\usepackage{fancyhdr}
+
+\pagestyle{fancy}
+\fancyhf{}
+\rhead{Résumé, Jan 2022}
+\lhead{Soumyodeep Dey}
+\renewcommand{\headrulewidth}{1pt}
+
+
+% personal data
+\name{Soumyodeep}{Dey}
+%\title{Academic resume}                               % optional, remove / comment the line if not wanted
+\address{HSB307, Department of Physics, IIT Madras}{Chennai-600036, Tamil Nadu}{INDIA}% optional, remove / comment the line if not wanted; the "postcode city" and and "country" arguments can be omitted or provided empty
+\phone[mobile]{+91 9791871090}                   % optional, remove / comment the line if not wanted
+%\phone[fixed]{01234 123456}                    % optional, remove / comment the line if not wanted
+%\phone[fax]{+3~(456)~789~012}                      % optional, remove / comment the line if not wanted
+\email{soumyodeepdey@outlook.com}                               % optional, remove / comment the line if not wanted
+\homepage{physics.iitm.ac.in/~soumyodeep}                         % optional, remove / comment the line if not wanted
+%\extrainfo{additional information}                 % optional, remove / comment the line if not wanted
+%\photo[64pt][0.4pt]{picture.jpg}                       % optional, remove / comment the line if not wanted; '64pt' is the height the picture must be resized to, 0.4pt is the thickness of the frame around it (put it to 0pt for no frame) and 'picture' is the name of the picture file
+%\quote{Some quote}                                 % optional, remove / comment the line if not wanted
+
+% to show numerical labels in the bibliography (default is to show no labels); only useful if you make citations in your resume
+%\makeatletter
+%\renewcommand*{\bibliographyitemlabel}{\@biblabel{\arabic{enumiv}}}
+%\makeatother
+%\renewcommand*{\bibliographyitemlabel}{[\arabic{enumiv}]}% CONSIDER REPLACING THE ABOVE BY THIS
+
+% bibliography with mutiple entries
+%\usepackage{multibib}
+%\newcites{book,misc}{{Books},{Others}}
+%----------------------------------------------------------------------------------
+%            content
+%----------------------------------------------------------------------------------
+\begin{document}
+%\begin{CJK*}{UTF8}{gbsn}                          % to typeset your resume in Chinese using CJK
+%-----       resume       ---------------------------------------------------------
+\makecvtitle
+
+\section{Education}
+
+\vspace{5pt}
+
+\subsection{Academic Qualifications}
+
+\vspace{5pt}
+
+\begin{itemize}
+	
+	\item{\cventry{2016--2021}{Doctor of Philosophy}{Indian Institute of Technology, Madras}{Chennai}{\textit{Nonlinear optics}}{CGPA:7.57/10}}
+	
+	\item{\cventry{2013--2015}{Master of Science}{Indian Institute of Technology, Madras}{Chennai}{\textit{M.Sc. Physics}}{CGPA:7.52/10}}  % arguments 3 to 6 can be left empty
+	
+	\item{\cventry{2010--2013}{Bachelor of Science}{Ramakrishna Mission Residential College (Autonomous), Narendrapur}{Kolkata}{\textit{Physics (Hons.) including Mathematics}}{Marks: 60\% (1st class)}}
+	
+\end{itemize}
+
+\vspace{2pt}
+
+\subsection{Scholastic Achievements}
+
+\vspace{5pt}
+
+\begin{itemize}
+	\item{Recipient of \textbf{INSPIRE FELLOWSHIP} sponsored by \textbf{Department of Science and Technology (DST)}, Government of India \textit{(2017-2021)}}
+	
+	\item{Recipient of \textbf{INSPIRE SCHOLARSHIP} sponsored by \textbf{Department of Science and Technology (DST)}, Government of India \textit{(2010-2015)}}
+\end{itemize}
+
+
+\section{Research Interest}
+
+\begin{itemize}
+	\item{Fabrication of optical setups for Nonlinear optical measurements}
+	\vspace{6pt}
+	
+	\item{Supercontinuum generation and its applications}
+	\vspace{6pt}
+	
+	\item{Structured beam generations and its applications}
+	\vspace{6pt}
+	
+	\item{Numerical simulations of optical laser pulses}
+	
+	\vspace{6pt}
+	\item{Cold atom physics and its applications}
+\end{itemize}
+
+\section{Notable Projects}
+
+\vspace{5pt}
+
+\begin{itemize}
+
+\item{\textbf{Masters Project:} \textit{'Spectral Phase Interferometry for Direct Electric field Reconstruction (SPIDER)'}}
+
+\vspace{6pt}
+
+\item{\textbf{Pre-doctoral Project:} \textit{'Supercontinuum generation for transient absorption spectroscopy'} sponsored by Defence Research Development Organization (DRDO), Government of India}
+
+\end{itemize}
+
+\section{Experimental skills}
+\begin{itemize}
+	\item{ Femtosecond amplifier (Model: \href{https://www.coherent.com/lasers/amplifiers/astrella}{\color{blue}Coherent Astrella}). This laser system can deliver output of $35$ $fs$ @ $800$ $nm$ and $1$ $kHz$ of repetition rate.}
+	
+	\vspace{4pt}
+	
+	\item{I have five years of experience of working with femtosecond oscillator (TISSA100, CDP) as a part of my PhD work.}
+	
+	
+	\vspace{4pt}
+	
+	
+	\item{During my PhD work, I made few setups listed below.
+		\vspace{3pt}
+		\begin{itemize}
+			\item{\textbf{Autocorrelation setup :} A technique to measure ultrafast laser pulse durations in femtosecond time domain.}
+			\item{\textbf{Supercontinuum Generation Setup:} This setup can convert incoming monochromatic laser light in to a broad band light source ranging from $470$ $nm$ to $1650$ $nm$.}
+			\item{\textbf{Mach-Zehnder Interferometer:} This setup has been made to characterize phase profile of structured beam including optical vortices.}
+		\end{itemize}	
+		\vspace{3pt}
+		
+		While making these setups, I gained experiences about optical beam alignments, hardware interfacing (with LabVIEW, Labjack and Arduino), spatio-temporal matching of two ultrafast ($100$ $fs$) pulses and phase matching by angle tuning. I have also hands-on experience on Laguerre Gaussian (LG) beam generation by spatial light modulator and its phase characterization by Mach-Zehnder interferometer.}
+	
+	\vspace{4pt}
+	
+
+	\item{I am experienced working with optical chopper and lock-in amplifier to improve the signal to noise ratio.}
+	
+	\vspace{4pt}
+	
+	\item{I have 2 years of experience in the undergraduate electronics laboratory as a teaching assistant.}
+\end{itemize}
+
+
+
+\section{Technical and Personal skills}
+
+\vspace{6pt}
+
+\begin{itemize}
+
+\item \textbf{Programming Languages:} Python, Arduino, TeX.
+
+\vspace{6pt}
+
+\item \textbf{Industry Software Skills:} COMSOL,  Multisim, LabVIEW, Origin Pro
+
+\vspace{6pt}
+
+\item \textbf{Other:} Good soldering skills and making electronic circuits, Can write well organised and structured reports.
+
+\end{itemize}
+
+
+
+
+
+\section{Interests and extra-curricular activity}
+I am interested to learn new programming languages in my leisure time. So far, I became comfortable (and continuing) in many languages such as \textbf{C}, \textbf{Python}, \textbf{PhP}, \textbf{HTML \& CSS}. As my primary hobby is web development, I am continuing learning few popular library like \textbf{jQuery} and \textbf{Flask} with python. My secondary hobby includes SPICE simulations (with \textbf{NI Multisim}) of electronic circuits and testing them. I also enjoy 3D computer aided modelling with \textbf{Blender}.
+
+\vspace{6pt}
+
+\section{References}
+
+\vspace{6pt}
+
+\begin{itemize}
+	
+	\item{Up to 3 references available on request}
+	
+\end{itemize}
+
+\section{Journal Publications}
+\begin{itemize}
+	\item{\emph{Investigation of thermal nonlinearity due to nJ high repetition rate fs pulses on wrinkled graphene}, \textbf{Soumyodeep Dey}, Sudhakara Reddy Bongu, Vijay Kumar Sagar and Prem Ballabh Bisht, \textbf{Journal of the Optical Society of America B} Vol. 38, No. 6 (2021); \href{doi.org/10.1364/JOSAB.420119}{\color{blue}doi.org/10.1364/JOSAB.420119}.}
+	
+	\vspace{6pt}
+	
+	\item{\emph{Study of a dark core beam generated by nonlinear thermo-optical effect}, \textbf{Soumyodeep Dey}, Sailaja Rallabandi, Surendra Singh and Prem Ballabh Bisht, \textbf{Optics \& Laser Technology} 134, 106652 (2021); \href{doi.org/10.1016/j.optlastec.2020.106652}{\color{blue}doi.org/10.1016/j.optlastec.2020.106652}.}
+	
+	\vspace{6pt}
+	
+	\item{\emph{Broad band nonlinear optical absorption measurements of the laser dye IR26 using white light continuum Z-scan}, \textbf{Soumyodeep Dey}, Sudhakara Reddy Bongu, and Prem Ballabh Bisht, \textbf{Journal of Applied Physics} 121, 113107 (2017); \href{doi.org /10.1063/1.4978762}{\color{blue}doi.org /10.1063/1.4978762}.}
+
+	\vspace{6pt}
+
+	\item{\emph{Numerical investigations on photonic nanojet coupled plasmonic system for photonic applications}, Tulika Agrawal, \textbf{Soumyodeep Dey}, Shubhayan Bhattacharya, Gurvinder Singh and Prem Ballabh Bisht, \textbf{Journal of Optics}, In Press (2022); \href{https://doi.org/10.1088/2040-8986/ac4d73}{\color{blue}doi.org/10.1088/2040-8986/ac4d73}}
+
+	
+	\vspace{6pt}
+	
+	\item{\emph{Probing heteroatoms co-doped graphene quantum dots for energy transfer and 2-photon assisted applications}, Vijay Kumar Sagar, \textbf{Soumyodeep Dey}, Shubhayan Bhattacharya, Pooria Lesani, Yogambha Ramaswamy, Gurvinder Singh, Hala Zreiqat and Prem Ballabh Bisht, \textbf{Journal of Photochemistry and Photobiology A: Chemistry} 423, 113618 (2022); \href{https://doi.org/10.1016/j.jphotochem.2021.113618}{\color{blue}doi.org/10.1016/ j.jphotochem.2021.113618}.}
+	
+	\vspace{6pt}
+	
+	\item{\emph{Optical characterization of graphene-f-o-phenylenediamine and charge transfer interaction with organic dye}, Vijay Kumar Sagar, Shubhayan Bhattacharya, \textbf{Soumyodeep Dey} and Prem Ballabh Bisht, \textbf{Carbon} 166, 15-25 (2020); \href{doi.org /10.1016/j.carbon.2020.05.026}{\color{blue}doi.org /10.1016/j.carbon.2020.05.026}.}
+	
+	\vspace{6pt}	
+	
+\end{itemize}
+
+\section{Conference Proceedings}
+\begin{itemize}
+	\item{\emph{Generation of supercontinuum with nJ pulses in 450-1700nm range}, \textbf{Soumyodeep Dey}, Sudhakara Reddy Bongu, and Prem Ballabh Bisht, \textbf{13th International Conference on Fiber Optics and Photonics}, (2016); \href{doi.org /10.1364/PHOTONICS.2016.Th3A.30}{\color{blue}doi.org /10.1364/PHOTONICS.2016.Th3A.30}.}
+	
+	\vspace{6pt}
+	
+	\item{\emph{Thermal and optical nonlinearity due to broadened femtosecond nJ pulses at high repetition rate}, \textbf{Soumyodeep Dey}, Sudhakara Reddy Bongu, and Prem Ballabh Bisht, \textbf{AIP Conference Proceedings}, 2244, 060006 (2020); \href{doi.org /10.1063/5.0009060}{\color{blue}doi.org /10.1063/5.0009060}.}
+\end{itemize}
+
+\section{Conference Presentations}
+\begin{itemize}
+	\item{\emph{Zero dispersion wavelength shift in solid core photonic crystal fibre}, \textbf{S. Dey}, S. R. Bongu and P. B. Bisht in \textbf{National Laser Symposium (NLS-26)}, BARC, Mumbai, Dec-19-24, (2017) \emph{(Poster Presentation)}.}
+	
+	\vspace{6pt}
+	
+	\item{\emph{Supercontinuum generation in photonic crystal fibre on pumping with fs laser pulses}, \textbf{S. Dey}, S. R. Bongu, P. B. Bisht in \textbf{International Conference on Advancement in Science and Technology (ICAST-2018)}, Visva-Bharati, Santiniketan, India, September 3-4, (2018) \emph{(Poster Presentation)}.}
+	
+	\vspace{6pt}
+	
+	\item{\emph{Effects of High Repetition Rate Ultrafast Laser Pulses on Spatial Self-phase Modulation}, S.Dey and  P. B. Bisht, in \textbf{National Laser Symposium (NLS-29)}, Shri Vaishnav Vidyapeeth Vishwavidyalaya (SVVV), Indore, Feb-12-15, (2021) \emph{(Oral Presentation)}.}
+\end{itemize}
+
+
+\section{Workshop Attended}
+
+\begin{itemize}
+	\item{Participated in the \textbf{Science and Technology Exhibition 2011} organized by the \textbf{IEEE Calcutta University
+		Student Branch}, Calcutta University, Kolkata, West Bengal, India.}
+	
+	\vspace{3pt}
+	
+	\item{Participated in a \textbf{UGC sponsored National Seminar on Quantum Mechanics: Inception, Evolution and Future} organized by \textbf{Department of Physics, Narasinha Dutta College, Howrah} in collaboration with \textbf{Seth Anandram Jaipuria College}, Kolkata in a three-day workshop.}
+	
+	\vspace{3pt}
+	
+	\item{Participated in\textbf{ West Bengal Science \& Technology Congress} in a two-day workshop organized by \textbf{Ramakrishna Mission Residential College (Autonomous), Narendrapur} in collaboration with \textbf{West Bengal Science \& Technology Department, Government of West Bengal.}}
+	
+\end{itemize}
+
+\end{document}
+
+
+%% end of file `template.tex'.
